@@ -1,0 +1,106 @@
+@charset "UTF8";
+
+@import url("https://fonts.googleapis.com/css2?family=Anton+SC&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html,
+body {
+  min-height: 100vh;
+}
+
+header {
+  padding: 20px;
+  background-color: black;
+  margin: auto;
+  text-align: center;
+}
+
+header h1 {
+  font-family: "Anton SC", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  color: white;
+  font-size: 100px;
+  margin: 20px;
+  font-variant: small-caps;
+}
+
+header p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+main section {
+  font-family: "Comic Relief", system-ui;
+  font-weight: 400;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 70px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#estrofe1 {
+  margin: 60px;
+  background-color: white;
+}
+
+#estrofe2 {
+  background-image: url(./imagens/background001.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#textoimg1 {
+  margin: 60px;
+  max-width: 600px;
+  color: white;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.397);
+}
+
+#estrofe3 {
+  margin: 60px;
+  background-color: white;
+}
+
+#estrofe4 {
+  background-image: url(./imagens/background002.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#textoimg2 {
+  margin: 60px;
+  max-width: 600px;
+  color: white;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.397);
+}
+
+#estrofe5 {
+  margin: 60px;
+  background-color: white;
+}
+
+footer {
+  padding: 10px;
+  background-color: black;
+  margin: auto;
+  text-align: center;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
