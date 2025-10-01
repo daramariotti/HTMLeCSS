@@ -56,6 +56,7 @@ main section {
   background-image: url(./imagens/background001.jpg);
   background-size: cover;
   background-attachment: fixed;
+  box-shadow: 6px 6px 13px 0px black;
 }
 
 #textoimg1 {
@@ -75,6 +76,7 @@ main section {
   background-image: url(./imagens/background002.jpg);
   background-size: cover;
   background-attachment: fixed;
+  box-shadow: 6px 6px 13px 0px black;
 }
 
 #textoimg2 {
