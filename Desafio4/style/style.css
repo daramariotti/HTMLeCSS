@@ -26,7 +26,7 @@ main {
   position: relative;
 }
 
-#telefone {
+section#telefone {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -37,7 +37,7 @@ main {
   background-repeat: no-repeat;
 }
 
-#tela {
+iframe#tela {
   position: relative;
   top: 50%;
   left: 50%;
@@ -47,5 +47,21 @@ main {
   background-repeat: no-repeat;
 }
 
-#redessociais {
+section#redessociais {
+  text-align: right;
+}
+
+section#redessociais img {
+  width: 50px;
+  margin: 10px;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px black;
+  box-sizing: border-box;
+}
+
+section#redessociais img:hover {
+  border: 2px solid white;
+  transform: translate(-3px, -3px);
+  box-shadow: 5px 5px 10px black;
+  transition: transform 1s, border 0.5s;
 }
