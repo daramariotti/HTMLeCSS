@@ -1,0 +1,65 @@
+@charset "UTF8";
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: #5f2c82;
+}
+
+main {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+
+section#login {
+  /* com essas configurações eu deixo o objeto no meio da tela */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* com essas configurações eu deixo o objeto do tamanho e da cor desejada, e com bordas */
+  background-color: white;
+  width: 250px;
+  height: 500px;
+  border-radius: 20px;
+  /* hidden esconde tudo o que estiver fora da border */
+  overflow: hidden;
+  /* para adicionar sombra na caixa, 0 0 significa que ela não vai
+  espelhar a mais pra nenhum lado, 10 ela sera espalhada no geral e a cor */
+  box-shadow: 0px 0px 10px rgb(46, 45, 45);
+}
+
+section#login > div#imagem {
+  /* block transforma um elemento em uma "caixa egoísta" que quer ocupar 
+  todo o espaço horizontal a linha disponível e aceita SIM comandos de tamanho. 
+  OUTROS DISPLAYS :
+  none - faz o elemento desaparecer e desocupar espaço
+  inline-block - deixa todos os elementos na mesma linha e é possivel SIM
+  das comandos de tamanho 
+  flex - alinhar itens em uma direção por vez (horizontal ou vertical)
+  grid - organiza itens na horizontal e vertical, como uma planilha */
+  display: block;
+  background: #5f2c82 url(../imagens/imglogin.jpg) no-repeat;
+  height: 200px;
+  /* cover garante que a imagem cubra 100% do elementro */
+  background-size: cover;
+  /* caso a imagem seja em um formato que não caiba inteira
+  essa confirguração left bottom, faz ela começar do canto dela
+  da esquerda e de baixa */
+  background-position: left bottom;
+}
+
+section#login > div#formulario {
+  /* block transforma um elemento em uma "caixa egoísta" que quer ocupar 
+  todo o espaço horizontal a linha disponível e aceita SIM comandos de tamanho */
+  display: block;
+  /* cria espaço interno entre o item e a caixa */
+  padding: 10px;
+}
