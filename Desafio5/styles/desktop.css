@@ -11,14 +11,19 @@ body {
   width: 100vw;
 }
 
-section#login > div#imagem {
+#login {
+  /* inverse os lados, a imagem fica na direita e o formulario na esquerda */
+  flex-direction: row-reverse;
+}
+
+#imagem {
   /* definimos que o width vai ocupar 50% do espaço do login, pois irá dividir o espaço 
   do login com o formulario e o height ocupa 80vh como foi definido para o espaço do login */
   width: 50%;
   height: 80vh;
 }
 
-section#login > div#formulario {
+#formulario {
   /* display flex deixa o designer mais responsivo, flex-direcion muda para coluna,
   gap da espaço entre os objetos */
   display: flex;

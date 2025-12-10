@@ -18,7 +18,7 @@ main {
   width: 100vw;
 }
 
-section#login {
+#login {
   /* com essas configurações eu deixo o objeto no meio da tela */
   position: absolute;
   top: 50%;
@@ -27,7 +27,7 @@ section#login {
   /* com essas configurações eu deixo o objeto do tamanho e da cor desejada, e com bordas */
   background-color: white;
   width: 250px;
-  height: 500px;
+  height: 510px;
   border-radius: 20px;
   /* hidden esconde tudo o que estiver fora da border */
   overflow: hidden;
@@ -38,7 +38,7 @@ section#login {
   transition: 0.2s;
 }
 
-section#login > div#imagem {
+#imagem {
   /* block transforma um elemento em uma "caixa egoísta" que quer ocupar 
   todo o espaço horizontal a linha disponível e aceita SIM comandos de tamanho. 
   OUTROS DISPLAYS :
@@ -58,10 +58,76 @@ section#login > div#imagem {
   background-position: left bottom;
 }
 
-section#login > div#formulario {
+#formulario {
   /* block transforma um elemento em uma "caixa egoísta" que quer ocupar 
   todo o espaço horizontal a linha disponível e aceita SIM comandos de tamanho */
   display: block;
   /* cria espaço interno entre o item e a caixa */
   padding: 10px;
+}
+
+h1 {
+  /* centraliza o texto e dá um espaço em volta dele */
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+p {
+  /* define o tamanho da fonte com base no tamanho da tela */
+  font-size: 1em;
+}
+
+.campo {
+  /* obriga o label e input dividirem espaço ficando lado a lado */
+  display: flex;
+  background-color: #5f2c82;
+  align-items: center;
+  border-radius: 5px;
+  margin: 5px;
+  height: 40px;
+}
+
+.campo input {
+  width: 100%;
+  height: 15px;
+  padding: 10px;
+  margin: 10px 0px;
+  border-color: #5f2c82;
+  border-radius: 5px;
+}
+
+.material-symbols-outlined {
+  font-size: 35px;
+  color: white;
+  margin: 5px;
+}
+
+/* tenho que usar palavra input para chamar, se não estará alterando
+apenas a div e não o botão */
+.botao input {
+  display: block;
+  font-size: 1em;
+  font-weight: bold;
+  width: 100%;
+  height: 30px;
+  background-color: rgb(82, 202, 82);
+  margin: 10px 0px;
+  color: white;
+  border-color: rgb(82, 202, 82);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.botao input:hover {
+  background-color: rgb(38, 88, 38);
+}
+
+#esqueci input {
+  background-color: white;
+
+  color: black;
+}
+
+#esqueci input:hover {
+  background-color: rgb(38, 88, 38);
 }
