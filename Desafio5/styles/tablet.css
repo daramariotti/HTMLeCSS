@@ -10,3 +10,33 @@ body {
   height: 100vh;
   width: 100vw;
 }
+
+section#login {
+  /* display flex automaticamente coloca os objetos em linha, caso eles forem em colunas
+  deve usar o: flex-direction: column; */
+  display: flex;
+  /* o width e o height vai pegar 80% da tela independente se tem outros objetos nela */
+  width: 80vw;
+  height: 80vh;
+  /* independente da tela, o máximo que esse login vai ocupar será de 990px */
+  max-width: 990px;
+}
+
+section#login > div#imagem {
+  /* definimos que o width vai ocupar 30% do espaço do login, pois irá dividir o espaço 
+  do login com o formulario e o height ocupa 80vh como foi definido para o espaço do login */
+  width: 30%;
+  height: 80vh;
+}
+
+section#login > div#formulario {
+  /* display flex deixa o designer mais responsivo, flex-direcion muda para coluna,
+  gap da espaço entre os objetos */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* definimos que o width vai ocupar 70% do espaço do login, pois irá dividir o espaço 
+  do login com a imagem e o height ocupa 80vh como foi definido para o espaço do login */
+  width: 70%;
+  height: 80vh;
+}

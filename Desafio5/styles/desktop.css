@@ -10,3 +10,22 @@ body {
   height: 100vh;
   width: 100vw;
 }
+
+section#login > div#imagem {
+  /* definimos que o width vai ocupar 50% do espaço do login, pois irá dividir o espaço 
+  do login com o formulario e o height ocupa 80vh como foi definido para o espaço do login */
+  width: 50%;
+  height: 80vh;
+}
+
+section#login > div#formulario {
+  /* display flex deixa o designer mais responsivo, flex-direcion muda para coluna,
+  gap da espaço entre os objetos */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* definimos que o width vai ocupar 50% do espaço do login, pois irá dividir o espaço 
+  do login com a imagem e o height ocupa 80vh como foi definido para o espaço do login */
+  width: 50%;
+  height: 80vh;
+}
