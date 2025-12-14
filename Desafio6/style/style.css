@@ -26,6 +26,7 @@ body {
   /* para que o a aceite ser centralizado precisa transforma-lo em block */
   display: block;
   text-align: center;
+  padding: 10px;
 }
 
 .main-nav ul {
@@ -43,15 +44,24 @@ body {
   background-color: black;
   padding: 10px;
   margin: 5px;
-  border-radius: 10px;
+  border-radius: 5px;
   width: 90vw;
+  cursor: pointer;
+}
+
+.main-nav a:hover {
+  background-color: rgb(226, 226, 226);
+  color: black;
 }
 
 .content-body {
   width: 80vw;
   /* o navegador entende com margin:auto "Calcule as margens esquerda e direita automaticamente para serem iguais"
   isso faz com que o conteiner fique centralizado */
-  margin: auto;
   background-color: white;
   padding: 10px;
+  /* começo define as laterais e depois define em cima e em baixo */
+  margin: 10px auto;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px rgb(29, 29, 29);
 }

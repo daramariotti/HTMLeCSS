@@ -1,0 +1,14 @@
+@charset "UTF8";
+
+.brand a {
+  text-align: left;
+  padding: 10px;
+}
+
+.main-nav ul {
+  flex-direction: row;
+}
+
+.main-nav a {
+  width: 8vw;
+}

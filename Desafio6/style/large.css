@@ -1,0 +1,8 @@
+@charset "UTF8";
+
+.main-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 15px 10px;
+}
