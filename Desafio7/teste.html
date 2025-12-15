@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+
+      .cont {
+        border: 2px solid black;
+        height: 410px;
+        display: grid;
+        grid-template: repeat(4, 1fr) / repeat(3, 1fr);
+        gap: 5px;
+        background-color: rgb(173, 168, 168);
+        place-content: start start;
+      }
+
+      .item1 {
+        background-color: yellowgreen;
+        border: 2px solid rgb(255, 136, 0);
+        grid-column-start: 1;
+        grid-column-end: 3;
+      }
+
+      .item2 {
+        background-color: rgb(205, 50, 71);
+        border: 2px solid rgb(9, 255, 0);
+        grid-row-start: 1;
+        grid-row-end: 4;
+        grid-column-start: 3;
+        grid-column-end: 4;
+      }
+
+      .item3 {
+        background-color: rgb(104, 50, 205);
+        border: 2px solid rgb(0, 238, 255);
+        grid-row-start: 2;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 3;
+      }
+
+      .item4 {
+        background-color: brown;
+        border: 2px solid blue;
+        grid-column-start: 1;
+        grid-column-end: 4;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cont">
+      <div class="item1">1</div>
+      <div class="item2">2</div>
+      <div class="item3">3</div>
+      <div class="item4">4</div>
+    </div>
+  </body>
+</html>
