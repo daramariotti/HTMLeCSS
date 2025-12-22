@@ -1,0 +1,38 @@
+@charset "UTF8";
+
+main {
+  grid-template-columns: auto 300px 1fr auto;
+}
+
+#ficha {
+  grid-column: 2 / 3;
+  /* fit-content faz com que o elemento ocupe apenas o espaço necessário para o seu conteúdo */
+  height: fit-content;
+  /* sticky faz ela ficar parada conforme faz a rolagem da tela */
+  position: sticky;
+  /* o número que for definido no top será a altura que o elemento vai ficar fixado na tela */
+  top: 65px;
+}
+
+.detalhes {
+  grid-column: 3 / 4;
+}
+
+.skill-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.projeto {
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.projeto-info {
+  max-width: 60%;
+}
+
+.foto {
+  max-width: 40%;
+  max-height: 400px;
+}

@@ -8,12 +8,12 @@
 
 /* definimos as variaveis */
 :root {
-  --fundo-principal: #f5f5f5;
-  --texto: #222222;
-  --texto-inverso: #ffffff;
-  --destaque: #0077ff;
-  --destaque-inverso: #66bbff;
-  --fundo-card: #ffffff;
+  --fundo-principal: #222222;
+  --texto: #e0e0e0;
+  --texto-inverso: #333333;
+  --destaque: #ff5522;
+  --destaque-inverso: #a73917;
+  --fundo-card: #444444;
 }
 
 body {
@@ -24,6 +24,15 @@ body {
   color: var(--texto);
 }
 
+.escuro {
+  --fundo-principal: #f5f5f5;
+  --texto: #222222;
+  --texto-inverso: #ffffff;
+  --destaque: #0077ff;
+  --destaque-inverso: #66bbff;
+  --fundo-card: #ffffff;
+}
+
 header {
   background-color: var(--destaque);
   color: var(--texto);
@@ -31,6 +40,13 @@ header {
   display: flex;
   justify-content: flex-end;
   align-content: center;
+  /* position+top fazem o menu ficar fixado no topo da tela quando faz a rolagem,
+  ao inves do top podemos usar bottom:0 que ele ficará grudado na parte de baixo.
+  z-index faz o menu ficar sobreposto dos objetos no site, quanto maior o número
+  menor é o risco dele ser coberto por algum objeto */
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 .menu ul {
@@ -62,14 +78,14 @@ main {
   margin-top: 20px;
 }
 
-.ficha {
+#ficha {
   background-color: var(--fundo-card);
   padding: 20px;
   border-radius: 8px;
   grid-column: 2;
 }
 
-img.foto {
+img.foto-perfil {
   width: 200px;
   /* 1/1 achata a imagem para que ela fique 1 pra 1 e o cover ajudar ela */
   aspect-ratio: 1/1;
@@ -94,7 +110,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1em;
+  font-size: 1.8em;
   gap: 1em;
   margin-top: 15px;
 }
@@ -106,5 +122,160 @@ h1 {
 }
 
 .social a:hover {
+  color: var(--destaque-inverso);
+}
+
+.detalhes {
+  grid-column: 2;
+}
+
+article {
+  background-color: var(--fundo-card);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+h2 {
+  color: var(--destaque);
+  padding-bottom: 10px;
+}
+
+.video {
+  width: 100%;
+  margin: auto;
+}
+
+.video-container {
+  position: relative;
+  aspect-ratio: 16/9;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.video-container iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+#skills {
+  margin-top: 20px;
+}
+
+.skill-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  margin: 10px;
+}
+
+.skill-container .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skill-container .nome {
+  font-weight: bold;
+  color: var(--texto);
+}
+
+.skill-container .porcent {
+  font-weight: bold;
+  color: var(--destaque);
+}
+
+.skill-container .barra {
+  width: 100%;
+  height: 8px;
+  background-color: var(--fundo-principal);
+  border-radius: 4px;
+}
+
+.skill-container .progresso {
+  height: 100%;
+  background-color: var(--destaque-inverso);
+  border-radius: 4px;
+}
+
+.formacao-container {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 20px;
+}
+
+.curso {
+  background-color: var(--fundo-principal);
+  border-radius: 8px;
+  border-left: 5px solid var(--destaque-inverso);
+  padding-left: 8px;
+  transition: border-width 0.5s, border-color 0.5s;
+}
+
+.curso:hover {
+  border-left-width: 15px;
+  border-color: var(--destaque);
+  cursor: pointer;
+}
+
+.periodo {
+  font-size: 0.8em;
+  font-weight: bold;
+  color: var(--texto);
+}
+
+.instituicao {
+  color: var(--destaque-inverso);
+  font-size: 1.1em;
+}
+
+.projeto-container {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 20px;
+}
+
+.projeto {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: var(--fundo-principal);
+  padding: 10px;
+  border-radius: 8px;
+  border-left: 5px solid var(--destaque-inverso);
+  transition: border-color 0.5s, border-width 0.5s;
+}
+
+.projeto:hover {
+  border-color: var(--destaque);
+  border-left-width: 15px;
+  cursor: pointer;
+}
+
+.foto {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+footer {
+  background-color: var(--destaque);
+  color: var(--texto-inverso);
+  text-align: center;
+  padding: 15px;
+}
+
+footer a {
+  color: var(--texto-inverso);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
   color: var(--destaque-inverso);
 }
